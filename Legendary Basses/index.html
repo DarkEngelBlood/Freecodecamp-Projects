@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=" 1.0">
   <meta>
-  <title>Legendary Basses Albertito</title>
+  <title>Original Basses</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -165,10 +165,20 @@
       <div class="form-container">
         <h2>Place your Order here</h2>
       <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-        <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" placeholder="Your First Name" type="text"></label>
-        <label for="last-name">Enter your Last Name: <input id="last-name" name="last-name" placeholder="Your Last Name" type="text"></label>
-        <label for="email">Enter your Email: <input id="email" name="email" placeholder="example@example.com" type="email"></label>
-        <label>Enter your Number: <input ></label>
+        <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" placeholder="Alberto" type="text" required></label>
+        <label for="last-name">Enter your Last Name: <input id="last-name" name="last-name" placeholder="Dominguez" type="text" required></label>
+        <label for="email">Enter your Email: <input id="email" name="email" placeholder="example@example.com" type="email" required></label>
+        <label>Enter your Phone Number: <input type="number" maxlength="14" placeholder="+549260437..." required></label>
+        <!-- Radio Inputs -->
+        <fieldset>
+        <legend>Choose your Bass:</legend>
+        <label for="basic-bass"><input type="radio" name="bass-type" id="basic-bass" checked> Basic Bass</label>
+        <label for="jazz-bass"><input type="radio" name="bass-type" id="jazz-bass"> Jazz Bass</label>
+        <label for="precision-bass"><input type="radio" name="bass-type" id="precision-bass"> Precision Bass</label>
+        <label for="5-string-bass"><input type="radio" name="bass-type" id="5-string-bass"> 5 String Bass</label>
+        <label for="6-string-bass"><input type="radio" name="bass-type" id="6-string-bass"> 6 String Bass</label>
+        <label for="deluxe-bass"><input type="radio" name="bass-type" id="deluxe-bass"> Deluxe Bass</label>
+        </fieldset>
         <input id="submit"  value="Submit" type="submit">
       </form>
       </div>
