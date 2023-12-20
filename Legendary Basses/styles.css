@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: #ffec0a;
+    background-color: #000;
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,7 +26,8 @@ body {
 }
 
 .divider {  
-  width: 11px;
+  width: 90%;
+  margin: 0 auto;
   border: #ffec0a solid 0.5px;
 }
 
