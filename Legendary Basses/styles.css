@@ -281,16 +281,44 @@ li > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  height: 80%;
-  border: black solid 6px;
+  width: 100%;
+  height: 97%;
   border-width: 12px 6px;
   border-radius: 3px;
+  background-color: #000;
+  color: #ffec0a;
+}
+
+form {
+  min-width: 300px;
+  max-width: 500px;
+  font-size: 1.1em;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin-top: 5px;
+  min-height: 1.8em;
+  background-color: #ffec0a;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 12px;
+  min-width: 300px;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 2.3em;
+  background-color: #ffec0a;
+  color: #000;
+  border: grey solid 1px
 }
 
 .form-container > h2 {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 #form {
