@@ -124,7 +124,7 @@ li > a {
 .title-text{
   font-size: 50px;
   text-align: center;
-  color: #fff;
+  color: #dcc;
 }
 
 /* /TITLE */
@@ -165,7 +165,7 @@ li > a {
   justify-content: center;
   padding: 10px;
   width: 80%;
-  color: #ffec0a;
+  color: #dcc;
 }
 
 .text-group > h2 {
@@ -212,48 +212,43 @@ li > a {
 /* CARDS */
 
 .prices {
-  display: flex;
-  background-color: #000;
-}
-
-.prices-container {
-  position: relative;
-  display: flex;
-  justify-content: center;  
+  display: flex; 
+  justify-content: space-around;
   align-items: center;
-  flex: 1;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  width: 1345px;
+  height: 650px;
+  padding: 0 10px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
+  width: 200px;
+  height: 500px;
   border-radius: 10px;
-  margin: 0 10px;
-  width: 50%;
-  height: 80%;
   box-shadow: 0px 0px 25px -10px;
-  border: #ffec0a solid 3px;
+  border: #ffec0a solid 2px;
 }
 
 .cards-img-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
+  flex: 1;
+  padding: 3px 3px 0 3px;
   border-radius: 10px 10px 0 0;
-  border: #ffec0a solid 4px;
-  border-bottom: #ffec0a solid 2px;
-}
-
-.proving {
-  width: 100%;
-  height: 100%;
+  border-bottom: #ffec0a solid 1px;
 }
 
 .cards-img {
-  position: absolute;
   object-fit: cover;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.proving {
   width: 100%;
   height: 100%;
 }
@@ -262,24 +257,21 @@ li > a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 15px 10px 10px 10px;
+  padding: 25px 10px 10px 10px;
   width: 100%;
   height: 30%;
-  border-bottom: #ffec0a solid 4px;
-  border-left: #ffec0a solid 4px;
-  border-right: #ffec0a solid 4px;
   border-radius: 0 0 10px 10px;
 }
 
 .cards-text > h2 {
   font-size: 20px;
   padding-bottom: 5px;
-  color: #ffec0a;
+  color: #dcc;
 }
 
 .cards-text > p {
   font-size: 16px;
-  color: #ffec0a;
+  color: #dcc;
 }
 
 /* /CARDS */
@@ -309,14 +301,16 @@ form {
   font-size: 1.1em;
   border: #ffec0a solid 1px;
   padding: 25px 30px;
+  color: #ddd;
 }
 
 input, textarea, select {
   width: 100%;
   margin-top: 5px;
   min-height: 1.8em;
-  background-color: #edd;
+  background-color: #dcc;
   resize: none;
+  padding-left: 4px;
 }
 
 input[type="submit"] {
@@ -341,6 +335,7 @@ input[type="submit"]:hover {
   padding-top: 2.5rem;
   padding-bottom: 2.2rem;
   letter-spacing: 1px;
+  color: #dcc;
 }
 
 #form {
