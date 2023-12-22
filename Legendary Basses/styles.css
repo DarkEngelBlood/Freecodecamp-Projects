@@ -39,6 +39,7 @@ body {
 .page-1-full-screen {
   height: 91vh;
   width: 100%;
+  min-width: 540px;
 }
 
 #page-wrapper {
@@ -50,6 +51,7 @@ body {
   top: 0;
   height: 100px;
   width: 100vw;
+  min-width: 530px;
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -390,3 +392,22 @@ input[type="submit"]:hover {
 }
 
 /* /FOOTER */
+
+@media (max-width: 768px) {
+
+  .prices {
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 1600px;
+  }
+
+}
+
+@media (max-width: 1045px) and (min-width: 769px) {
+
+  .prices {
+    width: 700px;
+    height: 1000px;
+  }
+}
