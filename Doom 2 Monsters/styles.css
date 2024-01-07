@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/024/998/783/large/franco-ferrari-original.jpg?1584240836);
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f2ed5e;
+  border: 3px solid #000;
+  height: 55px;
+  border-radius: 10px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  color: #fff;
+  min-width: 250px;
+  margin-left: 0px;
+  background-image: url("https://static.doomworld.com/monthly_2020_08/Untitled.png.c63e2eaecd5fc5c58755c91d8f7eff87.png");
+  z-index: 10; 
+  box-shadow: 0 0 10px 3px #000;
+}
+
+#navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.10);
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: 25px;
+  text-align: left;
+  text-shadow: 1px -1.5px 1px #000;
+  color: #f2ed5e;
+  font-weight: 600;
+}
+
+#navbar a:active {
+  color: #fc0000;
+  text-shadow: 1px -1px 1px #000;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul::-webkit-scrollbar {
+  width: 0px;
+}
+
+#navbar ul:hover::-webkit-scrollbar {
+  width: 3px;
+}
+
+#navbar ul::-webkit-scrollbar-thumb {
+  background: #f2ed5e;
+}
+
+#navbar li {
+  list-style-type: none;
+  border-top: 3px solid #666;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: #00000020;
+}
+
+#navbar li:first-child {
+  border-top: 0;
+}
+
+@media (hover:hover) {
+  #navbar li:hover {
+    background-color: #000;
+    color: #fc0000;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  cursor: pointer;
+}
+
+#main-doc {
+  display: block;
+  margin-left: 290px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 20px;
+  color: #fff;
+  background-image: url("https://talk.dengine.net/uploads/editor/no/129vctpel966.png");
+  box-shadow: 0 0 10px 1px #000;
+  z-index: 11;
+}
+
+.main-section img {
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px #000;
+  margin: 25px auto 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  font-family: Impact;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px -1.7px 3px #000;
+  color: #f2ed5e;
+  letter-spacing: 2px;
+}
+
+.header-nav {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  padding: 5px;
+  text-shadow: 3px -2.5px 2px #000;
+  text-align: center;
+  color: #fc0000;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+  font-size: 35px;
+}
+
+.quote {
+  display: block;
+  position: relative;
+  color: #f2ed5e;
+  background-color: #00000090;
+  padding: 20px 40px;
+  width: 75%;
+  line-height: 2;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.quote-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+p, .main-section ul, h4 {
+  display: block;
+  width: 90%;
+  margin: 20px auto 20px;
+  font-size: 18px;
+  color: #f2ed5e;
+  padding: 15px 0;
+  line-height: 23px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 3px -2px 2px #000;
+}
+
+h4 {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+.main-section ul {
+  width: 80%;
+}
+
+.main-section li {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+#Reference a {
+  color: #f2ed5e;
+}
+
+#Reference a:hover {
+  color: #fff;
+}
+
+#Reference a:active {
+  color: #000;
+}
+
+#Reference .info {
+  margin-top: -15px;
+}
+
+@media (max-width: 950px) {
+
+  #navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 98%;
+    display: block;
+    z-index: 50;
+    margin: 25px auto;
+  }
+
+  #navbar ul {
+    height: 76%;
+    padding: 15px 5px;
+  }
+
+  #navbar .header-nav {
+    padding-top: 30px;
+  }
+
+  #main-doc {
+    display: block;
+    top: 520;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    margin: 15px auto;
+    width: 90%;
+  }
+
+  h4, p, .main-section li {
+    font-size: 14px;
+  }
+
+  .quote {
+    font-size: 10px
+  }
+
+  .quote-title {
+    font-size: 11px;
+  }
+
+  .main-section li {
+    font-size: 12px;
+  }
+
+  header {
+    font-size: 26px;
+  }
+}
